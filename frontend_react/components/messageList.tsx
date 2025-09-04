@@ -20,7 +20,7 @@ const MessageList: React.FC = () => {
         formData.append("file", imageFile);
       }
 
-      const responst = await fetch("http://127.0.0.1:8000/uploadfile/", {
+      const responst = await fetch("https://chatwithllm-hol6.onrender.com/uploadfile/", {
         method: "POST",
         body: formData,
       });
